@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Priyansh Sehgal - Developer Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(19, 17, 17);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(42, 20, 62);
+
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: centre;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .left{
+            font-size: 1.6rem;
+        }
+
+        .FirstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+
+        }
+
+        .FirstSection div{
+            width: 30%;
+        }
+
+        .leftSection{
+            width: 50%;
+            font-size: 2.8rem;
+            align-items: center;
+        }
+
+        .rightSection{
+            width: 50%;
+        }
+
+        .purple{
+            color: purple;
+        }
+
+        #element{
+            color: purple;
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        .secondSection h1{
+            font-size: 1.8rem;
+            height: 20vh;
+        }
+
+        .gray{
+            color: gray;
+        }
+
+        .secondSection .box{
+            background-color:white;
+            width: 80vw;
+            height: 1px;
+            margin: 56 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+            
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            
+        }
+
+        .image-top{
+            width: 68px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            body{
+                background-color: red;
+            }
+            
+
+        }            
+        
+
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="left">Sehgal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Certificates</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="FirstSection">
+            <div class="leftSection">Hi! My name is <span class="purple">Priyansh</span> and I am a Passionate <span id="element"></span></div>
+                
+            <div class="rightSection"><img src="dev1.png" alt="Developer"></div>
+        </section>
+        
+        <section class="secondSection">
+            <span class="gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="devi.png" alt="">
+                    <div class="vertical-title">HTML Developer (2021 - 2022)</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png" alt="">
+                    <div class="vertical-title">Node js Developer (2021 - 2022)</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="sql.png" alt="">
+                    <div class="vertical-title">My SQL (2022 - 2023)</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="">
+                    <div class="vertical-title">Java Developer (2022 - 2023)</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="aws.webp" alt="">
+                    <div class="vertical-title">Amazon AWS (2022 - 2023)</div>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+    
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Python Enthusiast'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
